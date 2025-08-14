@@ -1,0 +1,84 @@
+/* Import original styles from assets - MUST be at the top */
+@import './assets/css/bootstrap.min.css';
+@import './assets/css/fontawesome-pro.css';
+@import './assets/css/flaticon.css';
+@import './assets/css/icomoon.css';
+@import './assets/css/animate.css';
+@import './assets/css/magnific-popup.css';
+@import './assets/css/meanmenu.min.css';
+@import './assets/css/slick.css';
+@import './assets/css/swiper.min.css';
+@import './assets/css/spacing.css';
+@import './assets/css/blog.css';
+@import './assets/css/sweetalert2.min.css';
+@import './assets/css/main.css';
+
+/* Reset default Vite styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App specific styles */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Override default root styles for our layout */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+/* FAQ styles */
+.faq-item {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.faq-question {
+  padding: 20px;
+  background: #f8f9fa;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.faq-question.active {
+  background: #007bff;
+  color: white;
+}
+
+.faq-question h5 {
+  margin: 0;
+}
+
+.faq-answer {
+  padding: 20px;
+  background: white;
+}
+
+/* Error page styles */
+.error-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.error-title {
+  font-size: 120px;
+  font-weight: bold;
+  color: #007bff;
+}
